@@ -33,9 +33,9 @@ Fetch information about a specific IP address:
 import 'package:dart_ipquery/dart_ipquery.dart';
 
 Future<void> main() async {
-	final client = IpQueryCient();
-	final ipInfo = await client.queryIp("8.8.8.8");
-	print(ipInfo);
+ final client = IpQueryCient();
+ final ipInfo = await client.queryIp("8.8.8.8");
+ print(ipInfo);
 }
 ```
 
@@ -53,9 +53,9 @@ Retrieve your machine's public IP address:
 import 'package:dart_ipquery/dart_ipquery.dart';
 
 Future<void> main() async {
-	final client = IpQueryCient();
-	final ip = await client.queryOwnIp();
-	print(ip);
+ final client = IpQueryCient();
+ final ip = await client.queryOwnIp();
+ print(ip);
 }
 ```
 
@@ -70,13 +70,15 @@ Future<void> main() async {
 Fetch details for multiple IP addresses in a single request:
 
 ```dart
+import 'package:dart_ipquery/dart_ipquery.dart';
+
 Future<void> main() async {
-	final ips = ["8.8.8.8", "1.1.1.1"];
-	final client = IpQueryCient();
-	final results = await client.queryBulk(ips);
-	for (final ipInfo in results) {
-		print(ipInfo);
-	}
+ final ips = ["8.8.8.8", "1.1.1.1"];
+ final client = IpQueryCient();
+ final results = await client.queryBulk(ips);
+ for (final ipInfo in results) {
+  print(ipInfo);
+ }
 }
 ```
 
