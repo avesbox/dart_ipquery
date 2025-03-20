@@ -1,6 +1,6 @@
 name: dart_ipquery
 description: A Dart library to query IP addresses using the ipquery.io API.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/avesbox/dart_ipquery
 topics:
   - ipquery

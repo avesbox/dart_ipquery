@@ -7,7 +7,6 @@ A Dart library to query IP addresses using the [ipquery.io](https://ipquery.io) 
 - Query detailed information for a specific IP address.
 - Fetch your own public IP address.
 - Perform bulk queries for multiple IP addresses.
-- Includes Pydantic models for easy data validation and parsing.
 
 ## Installation
 
